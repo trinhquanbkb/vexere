@@ -1,5 +1,6 @@
 const { stat } = require('fs')
 const { Stations } = require('../models')
+const { Op } = require("sequelize");
 
 const createStation = async (req, res) => {
     const { name, address, province } = req.body
@@ -11,16 +12,37 @@ const createStation = async (req, res) => {
     }
 }
 
-const getAllStation = async(req, res) => {
+const getStation = async (req, res) => {
+    const name = req.query.name ? req.query.name : ""
+    const address = req.query.address ? req.query.address : ""
+    const province = req.query.province ? req.query.province : ""
     try {
-        const stations = await Stations.findAll()
-        res.status(200).send(stations)
+        if (name || address || province) {
+            const stationFilter = await Stations.findAll({
+                where: {
+                    name: {
+                        [Op.like]: `%${name}%`
+                    },
+                    address: {
+                        [Op.like]: `%${address}%`
+                    },
+                    province: {
+                        [Op.like]: `%${province}%`
+                    },
+                }
+            })
+            res.status(200).send(stationFilter)
+        }
+        else {
+            const allStation = await Stations.findAll()
+            res.status(200).send(allStation)
+        }
     } catch (error) {
         res.status(500).send(error)
     }
 }
 
-const getDetailStation = async(req, res) => {
+const getDetailStation = async (req, res) => {
     try {
         const station = await Stations.findOne({
             where: {
@@ -33,7 +55,7 @@ const getDetailStation = async(req, res) => {
     }
 }
 
-const updateStation = async(req, res) => {
+const updateStation = async (req, res) => {
     const { name, address, province } = req.body
     try {
         const station = await Stations.update({ name, address, province }, {
@@ -47,7 +69,7 @@ const updateStation = async(req, res) => {
     }
 }
 
-const deleteStation = async(req,res) => {
+const deleteStation = async (req, res) => {
     try {
         const station = await Stations.destroy({
             where: {
@@ -62,7 +84,7 @@ const deleteStation = async(req,res) => {
 
 module.exports = {
     createStation,
-    getAllStation,
+    getStation,
     getDetailStation,
     updateStation,
     deleteStation,

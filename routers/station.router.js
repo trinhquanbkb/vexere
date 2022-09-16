@@ -1,9 +1,9 @@
 const express = require('express')
 const stationRouter = express.Router()
-const { createStation, getAllStation, getDetailStation, updateStation, deleteStation } = require('../controllers/station.controller')
+const { createStation, getStation, getDetailStation, updateStation, deleteStation, getStationFilter } = require('../controllers/station.controller')
 
 stationRouter.post("/", createStation)
-stationRouter.get("/", getAllStation)
+stationRouter.get("/", getStation)
 stationRouter.get("/:id", getDetailStation)
 stationRouter.put("/:id", updateStation)
 stationRouter.delete("/:id", deleteStation)
