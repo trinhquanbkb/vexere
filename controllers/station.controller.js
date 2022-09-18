@@ -1,4 +1,3 @@
-const { stat } = require('fs')
 const { Stations } = require('../models')
 const { Op } = require("sequelize");
 
