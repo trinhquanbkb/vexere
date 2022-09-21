@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const register = async (req, res) => {
     const { name, email, numberPhone, password } = req.body
     try {
-        //tạo ra một chuỗi 10 số ngẫu nhiên bằng thuật toán sált
+        //tạo ra một chuỗi 10 số ngẫu nhiên bằng thuật toán salt
         const salt = bcrypt.genSaltSync(10)
         //generate password
         const hashPassword = bcrypt.hashSync(password, salt)
@@ -40,7 +40,12 @@ const login = async (req, res) => {
     }
 }
 
+const uploadImage = (req, res) => {
+    res.send('Upload success')
+}
+
 module.exports = {
     register,
     login,
+    uploadImage,
 }
