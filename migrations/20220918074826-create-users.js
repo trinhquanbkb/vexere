@@ -28,11 +28,12 @@ module.exports = {
       password: {
         type: Sequelize.STRING,
         validate: {
-          len: [6, 20]
+          len: [6, 100]
         }
       },
       type: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        defaultValue: "user"
       },
       createdAt: {
         allowNull: false,
