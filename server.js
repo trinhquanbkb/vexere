@@ -7,8 +7,8 @@ const rootRouter = require('./routers/index')
 app.use(express.json())                                         // chuyển response và request về dạng json hết
 
 //cài static file
-const publicPathDirectory = path.join(__dirname, './public')    //hàm join dùng để nối đường dẫn __dirname ở đây chính là đường dẫn tới file server.js và các file trong folder public
-app.use(express.static(publicPathDirectory))                    //sử dụng đường dẫn đấy
+const publicPathDirectory = path.join(__dirname, './public')    //hàm join dùng để nối đường dẫn __dirname ở đây chính là đường dẫn tới 
+app.use(express.static(publicPathDirectory))                    //file server.js và các file trong folder public sử dụng đường dẫn đấy
 
 //sử dụng router
 app.use("/api/v1", rootRouter)
