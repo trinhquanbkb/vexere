@@ -1,4 +1,4 @@
-const { Stations } = require('../../models')
+const { Stations, Trips } = require('../../models')
 
 const checkStation = async(req, res, next) => {
     const station = await Stations.findOne({
@@ -6,7 +6,6 @@ const checkStation = async(req, res, next) => {
             id: req.params.id
         }
     })
-    console.log(station)
     if(station){
         next()
     } else {
@@ -14,6 +13,20 @@ const checkStation = async(req, res, next) => {
     }
 }
 
+const checkTrip = async(req, res, next) => {
+    const trip = await Trips.findOne({
+        where: {
+            id: req.params.id
+        }
+    })
+    if(trip){
+        next()
+    } else {
+        res.status(404).send(`Cannot found trip by id = ${req.params.id}`)
+    }
+}
+
 module.exports = {
     checkStation,
+    checkTrip,
 }
