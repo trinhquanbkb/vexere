@@ -15,3 +15,4 @@ branch-2: login, register, CRUD user
 branch-3: bcryptjs, authentication, authorization
 bracnh-4: upload file and validate file
 branch-5: CRUD trips and create constraint trip && station
+branch-6: CRUD ticket
