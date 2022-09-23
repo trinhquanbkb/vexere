@@ -35,10 +35,13 @@ module.exports = (sequelize, DataTypes) => {
         len: [6, 100]
       }
     },
+    avatar: {
+      type: DataTypes.STRING,
+    },
     type: {
       type: DataTypes.STRING,
       defaultValue: "user"
-    }
+    },
   }, {
     sequelize,
     modelName: 'Users',

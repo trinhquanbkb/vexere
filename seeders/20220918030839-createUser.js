@@ -17,7 +17,7 @@ module.exports = {
           name: 'Trịnh Hoàng Quân',
           email: 'quan20028a3kb@gmail.com',
           numberPhone: '0327393234',
-          password: 'Tester123',
+          password: '$2a$10$kaHMMnOw8eKM8gMobWy8puBp7.23/U.go.FB6jRJOjlO7ufUbt3mu',
           type: 'admin',
           createdAt: '2022-09-16 10:51:57',
           updatedAt: '2022-09-16 10:51:57'
@@ -26,16 +26,16 @@ module.exports = {
           name: 'Nguyễn Hoàng Việt',
           email: 'viet123@gmail.com',
           numberPhone: '0942345743',
-          password: 'Tester123',
+          password: '$2a$10$fvjiLG2gacLNFcIFj3OzIuDvoYZLWBnUPH.EUaZ/DOMZKKdXNHF.2',
           type: 'user',
           createdAt: '2022-09-16 10:51:57',
           updatedAt: '2022-09-16 10:51:57'
         },
         {
-          name: 'Đỗ Tường Vy',
-          email: 'haoquan12bc@gmail.com',
-          numberPhone: '0975869443',
-          password: 'Tester123',
+          name: 'Đào Bá Lộc',
+          email: 'loctester@gmail.com',
+          numberPhone: '0945671434',
+          password: '$2a$10$XwmquBFyPsqqWHnTLHpPJ.vyNFVDia3Kj1A/Zob9TdzzIQxKfgcEG',
           type: 'user',
           createdAt: '2022-09-16 10:51:57',
           updatedAt: '2022-09-16 10:51:57'

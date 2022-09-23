@@ -31,6 +31,9 @@ module.exports = {
           len: [6, 100]
         }
       },
+      avatar: {
+        type: Sequelize.STRING,
+      },
       type: {
         type: Sequelize.STRING,
         defaultValue: "user"

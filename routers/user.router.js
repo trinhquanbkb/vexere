@@ -1,22 +1,12 @@
 const express = require('express')
 const userRouter = express.Router()
-const { register, login, uploadImage } = require('../controllers/user.controller')
-const { checkStation } = require('../middleware/Validate/validation')
+const { register, login, upload } = require('../controllers/user.controller')
+const { uploadImage } = require('../middleware/upload/uploadImage')
+const { authenticate } = require('../middleware/Auth/authenticate')
 
 userRouter.post('/register', register)
 userRouter.post('/login', login)
-
-const multer  = require('multer')
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, ('./public/images'))
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + '_' + file.originalname)
-    }
-})
-const upload = multer({ storage: storage })
-userRouter.post('/upload-image', upload.single('avatar'), uploadImage)
+userRouter.post('/upload-image', authenticate, uploadImage("user") , upload)
 
 module.exports = {
     userRouter,
