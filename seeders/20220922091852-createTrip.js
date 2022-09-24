@@ -76,7 +76,7 @@ module.exports = {
           toStation: 5,
           createdAt: '2022-09-16 02:23:32',
           updatedAt: '2022-09-16 02:23:32'
-        },{
+        }, {
           startTime: "2022-09-22 15:00:00",
           price: 80000,
           fromStation: 3,
@@ -94,5 +94,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
+    await queryInterface.bulkDelete('trips', null, {});
   }
 };
