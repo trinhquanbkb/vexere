@@ -39,7 +39,25 @@ module.exports = {
           type: 'user',
           createdAt: '2022-09-16 10:51:57',
           updatedAt: '2022-09-16 10:51:57'
-        }
+        },
+        {
+          name: 'Nguyễn Tường Vi',
+          email: 'svis@gmail.com',
+          numberPhone: '0327535463',
+          password: '$2a$10$diM0GjEZ8gafBzT9BLjWK.cwdgFjpHrYoZqK76MRhDiccNgRqaf4q',
+          type: 'user',
+          createdAt: '2022-09-16 10:51:57',
+          updatedAt: '2022-09-16 10:51:57'
+        },
+        {
+          name: 'Trịnh Hữu Tùng',
+          email: 'stungdb@gmail.com',
+          numberPhone: '0427456896',
+          password: '$2a$10$k4lrBsQoGelfQaNtz.J79uIeVWSKhJK1pVsl4b.qmh0OJkT.1oLk6',
+          type: 'user',
+          createdAt: '2022-09-23T10:57:39.723Z',
+          updatedAt: '2022-09-23T10:57:39.723Z'
+        },
       ]
       , {});
   },
