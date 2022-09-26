@@ -11,6 +11,13 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      pccId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'passengercarcompanies',
+          key: 'id'
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

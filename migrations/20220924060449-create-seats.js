@@ -11,9 +11,12 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      status: {
-        type: Sequelize.INTEGER,          //0 is empty, 1 is not empty
-        defaultValue: 0
+      vehicleId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'vehicles',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,
