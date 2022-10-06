@@ -55,8 +55,8 @@ module.exports = {
           numberPhone: '0427456896',
           password: '$2a$10$k4lrBsQoGelfQaNtz.J79uIeVWSKhJK1pVsl4b.qmh0OJkT.1oLk6',
           type: 'user',
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 10:51:57',
+          updatedAt: '2022-09-16 10:51:57'
         },
       ]
       , {});

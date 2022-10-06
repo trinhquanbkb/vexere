@@ -1,7 +1,8 @@
 //Create database and data of seeds
 0.Change address your database on file config/config.json
-1.sequelize db:migrate
-2.sequelize db:seed:all
+1.npm install -g yarn
+2.sequelize db:migrate        OR         node_modules/.bin/sequelize db:migrate
+3.sequelize db:seed:all       OR           node_modules/.bin/sequelize db:seed:all
 
 
 //start

@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "student",
+    "username": "root",
     "password": "abcd1234",
     "database": "vexere",
     "host": "127.0.0.1",

@@ -16,50 +16,50 @@ module.exports = {
         {
           name: 'AB_1',
           vehicleId: 1,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'AB_2',
           vehicleId: 2,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'AB_3',
           vehicleId: 3,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'AB_4',
           vehicleId: 4,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'AB_5',
           vehicleId: 5,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'TD_1',
           vehicleId: 6,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'TD_2',
           vehicleId: 7,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
         {
           name: 'TD_3',
           vehicleId: 8,
-          createdAt: '2022-09-23T10:57:39.723Z',
-          updatedAt: '2022-09-23T10:57:39.723Z'
+          createdAt: '2022-09-16 02:23:32',
+          updatedAt: '2022-09-16 02:23:32'
         },
       ], {});
   },
